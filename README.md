@@ -69,7 +69,7 @@ Here we used **phpmyadmin** sql for connecting python with database.
         * Password: [Password]
         * Database: test_nlu
    * How to Execute the Code:
-   Run the 'connect_my_sql.py' file to connect to the database, create a table, store predictions, and close the connection.
+   Run the `connect_my_sql(1).py` file to connect to the database, create a table, store predictions, and close the connection.
 ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/679ec87f-dc16-4dc8-87ab-e7129056750a)
 Make sure to replace placeholders such as 'path/to/your/checkpoint.ckpt' and '[Password]' with the actual paths and passwords.
 4. Testing model with real-time data:
