@@ -7,6 +7,7 @@ NLU project is developed by [Orcawise](https://www.orcawise.com/) NLP team,in wh
 * [Predefined Model(StanfordOpenIE)](https://github.com/Pravitha92/Orcawise_NLP_Project/blob/main/README.md#predefined-modelstanfordopenie)
 * [Finetuned Model(CustomBertModel)](https://github.com/Pravitha92/Orcawise_NLP_Project/blob/main/README.md#finetuned-modelcustombertmodel)
 * [Database](https://github.com/Pravitha92/Orcawise_NLP_Project/blob/main/README.md#database)
+* How to Run the code()
   
 ## Preprocecess the data
 The data collection process involves collecting different articles then doing annotation using Doccano to extract information pertaining to entities such as PERSON, ORG, and GPE within sentences. Subsequently, the annotated data can be processed using `doccano_into_csv.py` to convert the JSONL file into a CSV format. This is followed by the execution of `Class_final_code_cleaning.py`, `augment_cleaned.py` and `Combination_spin_class.py` to produce the final dataset for training the model.
@@ -55,3 +56,10 @@ Here we used **phpmyadmin** sql for connecting python with database.
 
 * Inserts the user input, fine-tuned prediction, and predefined prediction into the 'relation_extraction1' table.
 ![img_3.png](img_3.png)
+
+## How to Run the Code
+1. Pretrained OpenIE Model:
+   * Install the requirement library `pip install OpenIE'
+   * Install `Java` in windows.
+   * Clone the `core NLP model` and unzip it. Then set the path to unzipped file in environment variables.
+   * Run the `nlu_pretrained_model.py` file to initialize and use the OpenIE model.
