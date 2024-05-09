@@ -63,3 +63,6 @@ Here we used **phpmyadmin** sql for connecting python with database.
    * Install `Java` in windows.
    * Clone the `core NLP model` and unzip it. Then set the path to unzipped file in environment variables.
    * Run the `nlu_pretrained_model.py` file to initialize and use the OpenIE model.
+   * from nlu_pretrained_model import OpenIEExtractor
+![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/b85135af-1332-48c7-871c-23d8a54adbe6)
+
