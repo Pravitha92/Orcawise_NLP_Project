@@ -9,7 +9,7 @@ NLU project is developed by [Orcawise](https://www.orcawise.com/) NLP team,in wh
 * [Database](https://github.com/Pravitha92/Orcawise_NLP_Project/blob/main/README.md#database)
   
 ## Preprocecess the data
-The data collection process involves collecting different articles then doing annotation using Doccano to extract information pertaining to entities such as PERSON, ORG, and GPE within sentences. Subsequently, the annotated data can be processed using doccano_into_csv.py to convert the JSONL file into a CSV format. This is followed by the execution of `Class_final_code_cleaning.py`, augment_cleaned.py and Combination_spin_class.py to produce the final dataset for training the model.
+The data collection process involves collecting different articles then doing annotation using Doccano to extract information pertaining to entities such as PERSON, ORG, and GPE within sentences. Subsequently, the annotated data can be processed using `doccano_into_csv.py` to convert the JSONL file into a CSV format. This is followed by the execution of `Class_final_code_cleaning.py`, `augment_cleaned.py` and `Combination_spin_class.py` to produce the final dataset for training the model.
 
 ## Predefined Model(StanfordOpenIE)
 The `StanfordOpenIE` library is a powerful tool for extracting Open Information Extraction (OpenIE) triples from text. OpenIE involves identifying and extracting relationships between entities in a sentence without relying on pre-defined relationship labels. 
