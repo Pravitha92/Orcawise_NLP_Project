@@ -65,4 +65,52 @@ Here we used **phpmyadmin** sql for connecting python with database.
    * Run the `nlu_pretrained_model.py` file to initialize and use the OpenIE model.
    * from nlu_pretrained_model import OpenIEExtractor
 ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/b85135af-1332-48c7-871c-23d8a54adbe6)
+2. Custom BERT Model:
+   * Run the `nlu_custom_model(1).py` file to initialize and use the Custom BERT model.
+     ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/f8fe1c2e-0401-4c38-8bf2-fe94125bdae7)
+3. Connect to database:
+   * Database Used: **phpmyadmin** SQL
+   * Connection from Python with Database:
+      * The database connection is established using the `mysql.connector` library.
+      * Connection details:
+            * Host: localhost
+            * Port: 3306
+            * User: root
+            * Password: [Password]
+            * Database: test_nlu
+   * How to Execute the Code:
+   Run the 'connect_my_sql.py' file to connect to the database, create a table, store predictions, and close the connection.
+![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/679ec87f-dc16-4dc8-87ab-e7129056750a)
+Make sure to replace placeholders such as 'path/to/your/checkpoint.ckpt' and '[Password]' with the actual paths and passwords.
+4. Testing model with real-time data:
+   Run the jupyter notebook `testing_custom_bert_on_real_time_data.ipynb` file to generalize the result of openie and the calculate the accuracy of the models' results.
+   # Iterate through each row in the DataFrame
+for index, row in df.iterrows():
+    # Get the sentence from the 'sentence' column
+    sentence = row['sentence']
+
+    # Predict the relation for the current sentence
+    predicted_relation = obj.predict_relation(sentence)
+    predicted_relation1 = obj1.predict_relation(sentence)
+    predicted_relation2 = obj2.extract_relations(sentence)
+    
+
+    # Append the predicted relation to the list
+    predictions.append(predicted_relation)
+    predictions1.append(predicted_relation1)
+    predictions2.append(predicted_relation2)
+
+    # Compare the predicted relation with the 'ground_truth' column
+    ground_truth = row['ground_truth']
+    accuracy = 1 if predicted_relation == ground_truth else 0
+    accuracy1 = 1 if predicted_relation1 == ground_truth else 0
+
+
+    # Append the accuracy value to the list
+    accuracy_values.append(accuracy)
+    accuracy_values1.append(accuracy1)
+
+   
+
+
 
