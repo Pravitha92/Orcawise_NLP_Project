@@ -63,11 +63,11 @@ Here we used **phpmyadmin** sql for connecting python with database.
    * Connection from Python with Database:
       * The database connection is established using the `mysql.connector` library.
       * Connection details:
-            * Host: localhost
-            * Port: 3306
-            * User: root
-            * Password: [Password]
-            * Database: test_nlu
+        * Host: localhost
+        * Port: 3306
+        * User: root
+        * Password: [Password]
+        * Database: test_nlu
    * How to Execute the Code:
    Run the 'connect_my_sql.py' file to connect to the database, create a table, store predictions, and close the connection.
 ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/679ec87f-dc16-4dc8-87ab-e7129056750a)
