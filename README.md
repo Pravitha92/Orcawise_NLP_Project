@@ -84,7 +84,8 @@ Here we used **phpmyadmin** sql for connecting python with database.
 Make sure to replace placeholders such as 'path/to/your/checkpoint.ckpt' and '[Password]' with the actual paths and passwords.
 4. Testing model with real-time data:
    Run the jupyter notebook `testing_custom_bert_on_real_time_data.ipynb` file to generalize the result of openie and the calculate the accuracy of the models' results.
-#Iterate through each row in the DataFrame
+   
+# Iterate through each row in the DataFrame
 for index, row in df.iterrows():
     # Get the sentence from the 'sentence' column
     sentence = row['sentence']
@@ -110,7 +111,6 @@ for index, row in df.iterrows():
     accuracy_values.append(accuracy)
     accuracy_values1.append(accuracy1)
 
-   
 
 
 
