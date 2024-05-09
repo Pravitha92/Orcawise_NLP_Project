@@ -61,7 +61,7 @@ Here we used **phpmyadmin** sql for connecting python with database.
 1. Pretrained OpenIE Model:
    * Install the requirement library `pip install OpenIE'
    * Install `Java` in windows.
-   * Clone the `core NLP model` and unzip it. Then set the path to unzipped file in environment variables.
+   * Clone the [core NLP model](https://nlp.stanford.edu/software/stanford-corenlp-4.2.2.zip) and unzip it. Then set the path to unzipped file in environment variables.
    * Run the `nlu_pretrained_model.py` file to initialize and use the OpenIE model.
    * from nlu_pretrained_model import OpenIEExtractor
 ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/b85135af-1332-48c7-871c-23d8a54adbe6)
@@ -84,33 +84,6 @@ Here we used **phpmyadmin** sql for connecting python with database.
 Make sure to replace placeholders such as 'path/to/your/checkpoint.ckpt' and '[Password]' with the actual paths and passwords.
 4. Testing model with real-time data:
    Run the jupyter notebook `testing_custom_bert_on_real_time_data.ipynb` file to generalize the result of openie and the calculate the accuracy of the models' results.
+   ![image](https://github.com/Pravitha92/Orcawise_NLP_Project/assets/93678721/93a6efc3-0c90-4c44-8d55-546f498edd87)
+
    
-
-for index, row in df.iterrows():
-    # Get the sentence from the 'sentence' column
-    sentence = row['sentence']
-
-    # Predict the relation for the current sentence
-    predicted_relation = obj.predict_relation(sentence)
-    predicted_relation1 = obj1.predict_relation(sentence)
-    predicted_relation2 = obj2.extract_relations(sentence)
-    
-
-    # Append the predicted relation to the list
-    predictions.append(predicted_relation)
-    predictions1.append(predicted_relation1)
-    predictions2.append(predicted_relation2)
-
-    # Compare the predicted relation with the 'ground_truth' column
-    ground_truth = row['ground_truth']
-    accuracy = 1 if predicted_relation == ground_truth else 0
-    accuracy1 = 1 if predicted_relation1 == ground_truth else 0
-
-
-    # Append the accuracy value to the list
-    accuracy_values.append(accuracy)
-    accuracy_values1.append(accuracy1)
-
-
-
-
