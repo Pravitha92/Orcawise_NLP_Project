@@ -24,13 +24,13 @@ and unzip it. Then set the path to unzipped file in environment variables.
 4. Use IDE Pycharm or VS code
 ## Finetuned Model(CustomBertModel)
 `CustomBertModel` is a Python class designed for relation extraction using a fine-tuned BERT (Bidirectional Encoder Representations from Transformers) model. This class allows users to predict relationships between entities in a given sentence, specifically tailored for four predefined relations: 'noRelation', 'employedBy', 'managerOf', and 'locatedAt'.
-### Dataset:
+  #### Dataset:
 * Extracting data from pages and manually annotated articles using doccano.
 * Applying data cleaning, data augmentation, rephrasing, etc., on text data. Finally, obtained over 4000 sentences.
-### Process:
+  #### Process:
 * Finetuning the model using BERT model and saving the model using checkpoints.
 * Using these checkpoints for testing real time data.
-### Dependencies:
+  #### Dependencies:
 * Pytorch
 * numpy
 * transformers
