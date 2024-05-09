@@ -27,10 +27,10 @@ and unzip it. Then set the path to unzipped file in environment variables.
   #### Dataset:
 * Extracting data from pages and manually annotated articles using doccano.
 * Applying data cleaning, data augmentation, rephrasing, etc., on text data. Finally, obtained over 4000 sentences.
-  #### Process:
+#### Process:
 * Finetuning the model using BERT model and saving the model using checkpoints.
 * Using these checkpoints for testing real time data.
-  #### Dependencies:
+#### Dependencies:
 * Pytorch
 * numpy
 * transformers
