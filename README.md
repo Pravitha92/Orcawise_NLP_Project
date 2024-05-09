@@ -50,7 +50,7 @@ Here we used **phpmyadmin** sql for connecting python with database.
 ## How to Run the Code
 1. Pretrained OpenIE Model:
    * Install the requirement library `pip install OpenIE'
-   * Install `Java` in windows.
+   * Install [Java](http://jdk.javta.net/archive/) in windows.
    * Clone the [core NLP model](https://nlp.stanford.edu/software/stanford-corenlp-4.2.2.zip) and unzip it. Then set the path to unzipped file in environment variables.
    * Run the `nlu_pretrained_model.py` file to initialize and use the OpenIE model.
    * from nlu_pretrained_model import OpenIEExtractor
