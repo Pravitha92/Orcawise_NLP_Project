@@ -42,21 +42,11 @@ Here we used **phpmyadmin** sql for connecting python with database.
 ### Installation / Dependencies.
 * pip install mysql-connector-python
 ### Process
-* Ensure connection to MySQL database with the following details.Example:
-![img.png](img.png)
-* Create the Table.
-* Takes user input for a sentence.
-* Processes the input sentence using the Stanford OpenIE library (OpenIEExtractor) to extract predefined relations.
-
-     ![img_1.png](img_1.png)
- 
-* Processes the input sentence using a custom BERT model (CustomBertModel) to predict fine-tuned relations.
-
-  ![img_2.png](img_2.png)
-
-* Inserts the user input, fine-tuned prediction, and predefined prediction into the 'relation_extraction1' table.
-![img_3.png](img_3.png)
-
+ * Ensure connection to MySQL database with the following details.
+ * Create the Table.
+ * Takes user input for a sentence.
+ * Processes the input sentence using the Stanford OpenIE library (OpenIEExtractor) to extract predefined relations.
+ * Processes the input sentence using a custom BERT model (CustomBertModel) to predict fine-tuned relations.
 ## How to Run the Code
 1. Pretrained OpenIE Model:
    * Install the requirement library `pip install OpenIE'
